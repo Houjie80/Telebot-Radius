@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2024 nosignals
 #
-name: Building Neko DEVyt
+name: Building luci-app-telebot-radius
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
       version:
         description: 'Neko version'
         required: true
-        default: '1.2.2-beta'
+        default: ''
         type: string
       changelog:
         description: 'Changelog'
@@ -41,7 +41,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
 
       
       - name: Preparing Neko
@@ -88,19 +88,11 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./artifact/*
           overwrite: true
-          prerelease: true
-          tag: tes
+          prerelease: false
+          tag: dev
           file_glob: true
           body: |
-            # LUCI APP RAMFREE
-            Simple Clash TUN based Proxy
+            # LUCI APP TELEBOT
             ### Information
             - Changelog : 
-              - dev build, not recomended to install
               - ${{ inputs.changelog }}
-            - Default Config : 
-              - config.yaml : minimal Configs for Neko (only 1 rules) - Secret : ` sign `
-              - nosignals.yaml : 2 rules can added (Block Host, Game) - Secret : ` telekulo `
-            ### Dependency Requirement
-            - ` bash, kmod-tun, php, php-cgi ` (install PHP Manually before install Neko)
-            - Openwrt 23: ` php8 php8-cgi nftables mihomo` 
