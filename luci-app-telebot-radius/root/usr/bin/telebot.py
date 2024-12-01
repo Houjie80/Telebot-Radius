@@ -207,8 +207,8 @@ async def start(update: Update, context: CallbackContext):
 
     else:
         welcome_message = f"""▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
- SELAMAT DATANG DI MUTIARA-WRT
-                   TELEBOT-RADIUS
+ SELAMAT DATANG DI RASYA-WRT
+                   TELEBOT-RADMON
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 USERNAME  :  @{username}
 USER ID         :  {user_id}
