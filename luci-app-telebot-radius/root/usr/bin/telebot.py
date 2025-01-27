@@ -107,7 +107,7 @@ PROFILES_JSON_FILE = "/etc/telebot/profiles.json"
 # Lokasi File yang dibutuhkan
 LAST_POSITION_FILE = "/etc/telebot/bot.pid"
 FILE_PATH = "/etc/telebot/radius.sql"
-LOG_FILE_PATH = "/tmp/log/radius.log"
+LOG_FILE_PATH = "/var/log/radius.log"
 DEFAULT_FILE_UPLOAD_PATH  = "/root/"
 QUANTITY_KEYBOARD = "/etc/telebot/quantity.json"
 
