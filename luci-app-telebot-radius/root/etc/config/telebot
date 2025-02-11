@@ -1,10 +1,12 @@
 
 config telebot
 	option enabled '0'
-	option token '6793968084:AAE1I59uRsDJTYgfvYCQ09WbDF82eNXXXXX'
-	option userid '54628XXXXX'
+	option token '7686665443:AAEyyCjvzyq7uZbVM87iejglDsUUga69rgs'
+	option userid '643162827'
 	option ip_chilli '10.10.10.1'
 	option ip_lan '192.168.1.1'
-	option no_ewallet '0853-7268-7484'
-	option username 'Maizil41'
+	option no_ewallet '085643273595'
+	option username 'Pendosa80'
 	option geocode '38.87185673666062, -77.056269350381'
+	option ticket_loc '/RadMonv2/voucher/printTickets2.php'
+
